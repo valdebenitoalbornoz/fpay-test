@@ -1,0 +1,38 @@
+{
+  "name": "fpay-test",
+  "version": "1.0.0",
+  "description": "Prueba técnica FPay Amaris",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --runInBand --forceExit --config=jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valdebenitoalbornoz/fpay-test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Daniel Valdebenito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valdebenitoalbornoz/fpay-test/issues"
+  },
+  "homepage": "https://github.com/valdebenitoalbornoz/fpay-test#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
