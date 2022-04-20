@@ -1,5 +1,7 @@
 import dotenv from 'dotenv';
+import { Api } from './src/app';
 
 dotenv.config();
 
-console.log(process.env);
+const api = new Api();
+api.start();
