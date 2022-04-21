@@ -1,6 +1,7 @@
 const MAX_LIMIT = process.env.MAX_LIMIT || 10000;
-
+const MIN = 2;
 export class PrimesGetter {
+  
   public getPrimes(limit: number) {
     if (limit > MAX_LIMIT) {
         throw new Error(`El límite debe ser un número menor a ${MAX_LIMIT}`)

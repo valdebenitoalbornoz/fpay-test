@@ -12,9 +12,8 @@ export class PrimesRouter implements Router {
     initRoutes(): void {
         this.app.get('/primes/:limit',
             param('limit')
-                .isNumeric()
-                .withMessage('El parámetro debe ser un valor numérico')
-                .withMessage('El parámetro debe ser un valor entero'),
+                .isNumeric({ no_symbols: true })
+                .withMessage('El parámetro debe ser un número entero'),
             this.controller.run
         )    
     }
